@@ -1,0 +1,12 @@
+{
+  "consul": "consul:8500",
+  "services": [
+    {
+      "name": "docker-na-pratica-80",
+      "port": 80,
+      "health": "/usr/bin/curl -o /dev/null -s http://localhost/",
+      "poll": 3,
+      "ttl": 10
+    }
+  ]
+}
